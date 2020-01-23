@@ -13,3 +13,4 @@ $ cd ~/bin
 
 $ chmod +x install.sh
 
+Don’t forget to install the plugins in the .vimrc file - :PluginInstall.
