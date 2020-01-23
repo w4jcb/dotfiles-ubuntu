@@ -1,10 +1,18 @@
-#functions
+# functions
 mcd() {
 	mkdir -p $1
 	cd $1
 }
 
-#about ls
+# Easier navigation
+alias ..="cd .."
+alias cd..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
+alias -- -="cd -"
+
+# about ls
 alias lsl='ls -al | less'
 alias dir='ls -al'
 alias ll='ls -alF'
@@ -14,11 +22,11 @@ alias ..='cd ../'
 alias ...='cd ../..'
 alias gl='ls|grep --color'
 
-#about terminal
+# about terminal
 alias c='clear'
 alias r='reset'
 
-#others
+# others
 alias brc='source ~/.bashrc' # reloads ~/.bashrc file
 alias ghistory="history | grep"
 alias port='netstat -tulanp'
@@ -35,5 +43,5 @@ alias cp='cp -i'
 
 
 
-
+# Just for fun
 alias hi='echo "Hello World"'
