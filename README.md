@@ -1,6 +1,6 @@
 My Dot Files
 
-These are config files to set up a system the way I like it.
+These are config files I use for my systems.
 
 Installation
-git clone git://github.com/ryanb/dotfiles ~/.dotfiles
+git clone https://github.com/w4jcb/dotfiles.git
