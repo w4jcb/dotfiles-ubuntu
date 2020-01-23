@@ -6,7 +6,7 @@ mcd() {
 
 # Easier navigation
 alias ..="cd .."
-alias cd..="cd .."
+alias cd..="cd .."  # old DOS command correction 
 alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
