@@ -13,7 +13,7 @@ alias .....="cd ../../../.."
 alias -- -="cd -"
 
 # about ls
-alias lsl='ls -al | less'
+alias lsl='ls -al'
 alias dir='ls -al'
 alias ll='ls -alF'
 alias la='ls -A'
