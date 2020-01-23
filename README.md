@@ -2,7 +2,7 @@ My Dot Files
 
 These are config files I use for my systems. (This is a work in progress)
 
-Installation
+Installation of dotfiles and symbolic links
 git clone https://github.com/w4jcb/dotfiles.git
 
 $ cd ~/dotfiles
@@ -13,4 +13,9 @@ $ cd ~/bin
 
 $ chmod +x install.sh
 
-Don’t forget to install the plugins in the .vimrc file - :PluginInstall.
+
+Installation of Vundle
+
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+
+Don’t forget to install Vundle or other plugins that are in the .vimrc file - :PluginInstall.
