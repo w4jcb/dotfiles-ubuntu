@@ -7,7 +7,7 @@ git clone https://github.com/w4jcb/dotfiles.git
 
 $ cd ~/dotfiles
 
-$ mv install.sh ~/bin/install.sh
+$ cp install.sh ~/bin/install.sh
 
 $ cd ~/bin
 
