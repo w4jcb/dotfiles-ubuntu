@@ -18,9 +18,11 @@ alias dir='ls -al'
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -ltrhA'
-alias ..='cd ../'
-alias ...='cd ../..'
 alias gl='ls|grep --color'
+alias lss='ls -lhaF | grep ^l'	# list Symbolic links
+alias lsd='ls -lhaF | grep ^d'	# list directories
+alias lsf='ls -lhaF | grep ^-'  # list files
+
 
 # about terminal
 alias c='clear'
