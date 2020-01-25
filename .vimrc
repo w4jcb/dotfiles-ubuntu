@@ -10,6 +10,7 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
 Plugin 'tmhedberg/SimpylFold'
+Plugin 'Valloric/YouCompleteMe'
 
 " add all your plugins here (note older versions of Vundle
 " used Bundle instead of Plugin)
