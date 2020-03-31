@@ -40,3 +40,16 @@ for file in ${files2}; do
     echo "Creating symlink to $file in home/.vim directory."
     ln -sf ${dotfiledir}/${file} ${customdir}/${file}
 done
+
+# For my customized Neovim file    
+# list of files/folders to symlink in ${homedir}/.config/nvim
+files3="init.vim"
+
+# custom vim directory
+customdir=${homedir}/.config/nvim
+
+# create symlinks (will overwrite old dotfiles)
+for file in ${files3}; do
+    echo "Creating symlink to $file in home/.vim directory."
+    ln -sf ${dotfiledir}/${file} ${customdir}/${file}
+done
