@@ -12,7 +12,7 @@ fi
 homedir=$1 #/home/user_name
 
 # dotfiles directory
-dotfiledir=${homedir}/dotfiles
+dotfiledir=${homedir}/Local-Repo/dotfiles
 
 # list of files/folders to symlink in ${homedir}
 files="vimrc bash_aliases"
@@ -26,4 +26,17 @@ echo "...done"
 for file in ${files}; do
     echo "Creating symlink to $file in home directory."
     ln -sf ${dotfiledir}/.${file} ${homedir}/.${file}
+done
+    
+# For my customized vim file    
+# list of files/folders to symlink in ${homedir}/.vim
+files2="custom.vim"
+
+# custom vim directory
+customdir=${homedir}/.vim
+
+# create symlinks (will overwrite old dotfiles)
+for file in ${files2}; do
+    echo "Creating symlink to $file in home/.vim directory."
+    ln -sf ${dotfiledir}/${file} ${customdir}/${file}
 done
