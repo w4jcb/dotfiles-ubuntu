@@ -13,9 +13,3 @@ $ cd ~/bin
 
 $ chmod +x install.sh
 
-
-Installation of Vundle
-
-git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-
-Don’t forget to install Vundle or other plugins that are in the .vimrc file - :PluginInstall.
