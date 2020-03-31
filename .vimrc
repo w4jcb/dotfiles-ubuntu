@@ -1,42 +1,30 @@
-filetype off                  " required
-
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-
-" alternatively, pass a path where Vundle should install plugins
-"call vundle#begin('~/some/path/here')
-
-" let Vundle manage Vundle, required
-Plugin 'gmarik/Vundle.vim'
-Plugin 'tmhedberg/SimpylFold'
-Plugin 'Valloric/YouCompleteMe'
-
-" add all your plugins here (note older versions of Vundle
-" used Bundle instead of Plugin)
-
-" ...
-
-" All of your Plugins must be added before the following line
-call vundle#end()            " required
-filetype plugin indent on    " required
-
-"spit navigation
-nnoremap <C-J> <C-W><C-J>
-nnoremap <C-K> <C-W><C-K>
-nnoremap <C-L> <C-W><C-L>
-nnoremap <C-H> <C-W><C-H>
-
-" Enable folding
-set foldmethod=indent
-set foldlevel=99
+" vim-plug: Vim plugin manager
+" ============================
 "
-" Enable folding with the spacebar
-nnoremap <space> za"
+" Download plug.vim and put it in ~/.vim/autoload
+"
+"   curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+"    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+"
+" Edit your .vimrc
+"
+"   call plug#begin('~/.vim/plugged')
+"
+"   " Make sure you use single quotes
+call plug#begin('~/.vim/plugged')
+
+" Airline nice status bar
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+
+call plug#end()
 
 
-let g:SimpylFold_docstring_preview=1
 
+" Include user's custom vim configurations
+ let custom_configs_path = "~/.vim/custom.vim"
 
-set number relativenumber
+ if filereadable(expand(custom_configs_path))
+   execute "source " . custom_configs_path
+   endif
 
