@@ -9,7 +9,9 @@ today() {
     date +"%A, %B %-d, %Y"
 }
 
-
+showOS(){
+hostnamectl
+}
 
 # Easier navigation
 alias ..="cd .."
