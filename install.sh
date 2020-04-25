@@ -1,18 +1,20 @@
-#!/usr/bin/env bash
-############################
-# This script creates symlinks from the home directory to any desired dotfiles in ${homedir}/dotfiles
-############################
+#!/bin/sh
 
-if [ "$#" -ne 1 ]; then
-    echo "Usage: install.sh <home_directory>"
-	echo "Example install.sh /home/user_name"
-    exit 1
+set -ux
+
+cd
+
+if [ ! -d Local-Repo/dotfiles ] ; then
+  git clone https://github.com/w4jcb/dotfiles.git Local-Repo/dotfiles
 fi
 
-homedir=$1 #/home/user_name
+cd Local-Repo/dotfiles
+
+DIR=${PWD} # folder this file is in
+homedir=/home/${USER} #/home/user_name
 
 # dotfiles directory
-dotfiledir=${homedir}/Local-Repo/dotfiles
+dotfiledir=${DIR}
 
 # list of files/folders to symlink in ${homedir}
 files="vimrc bash_aliases"
@@ -53,3 +55,8 @@ for file in ${files3}; do
     echo "Creating symlink to $file in home/.vim directory."
     ln -sf ${dotfiledir}/${file} ${customdir}/${file}
 done
+
+# Install packages I can't live without.
+xargs -a packages.txt sudo apt-get install
+sudo pip install -r requirements.txt
+
