@@ -5,20 +5,14 @@ set number relativenumber
 
 set nocompatible
 
-
-
-
-
 "spit navigation
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
-
 syntax on "on turns on syntax highlighting (for multiple file extensions).
 filetype indent on
-
 
 " Search preferences
  set ignorecase
@@ -42,13 +36,4 @@ autocmd FileType html inoremap <localleader>b <b></b><Space><Esc>FeT>i
 nnoremap <buffer> <F10> :w<cr> :exec '!python3' shellescape(@%, 1)<cr>
 
 autocmd FileType python setlocal expandtab shiftwidth=4 softtabstop=4 tabstop=8
-
-
-
-
-
-
-
-
-
 
