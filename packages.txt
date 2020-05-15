@@ -29,3 +29,5 @@ exuberant-ctags
 ack-grep
 gimp
 audacious
+python-pip
+python3-pip
