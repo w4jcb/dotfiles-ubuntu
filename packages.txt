@@ -4,6 +4,7 @@ grsync
 gparted
 gedit
 gnome-tweaks
+gdebi
 lame
 chromium-browser
 soundconverter
