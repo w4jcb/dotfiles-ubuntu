@@ -60,3 +60,20 @@ done
 xargs -a packages.txt sudo apt-get install
 sudo pip install -r requirements.txt
 
+
+# Install all local .deb packages, if available:
+
+if [ -d "/home/$USER/Downloads/Packages" ]; then
+    echo "Installing local .deb packages..."
+    pushd /home/$USER/Downloads/Packages
+    for FILE in ./*
+   do
+       sudo gdebi -n "$FILE"
+   done
+    popd
+else
+    echo $'\n'$"WARNING! There's no ~/Downloads/Packages directory."
+    echo "Local .deb packages can't be automatically installed."
+    sleep 5 # The script pauses so this message can be read. 
+fi
+
