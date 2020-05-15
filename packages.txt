@@ -24,10 +24,10 @@ synaptic
 neovim
 vim
 curl
+python-pip
 python3-pip
 exuberant-ctags
 ack-grep
 gimp
-audacious
-python-pip
-python3-pip
+
+
