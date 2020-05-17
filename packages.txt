@@ -6,7 +6,6 @@ gedit
 gnome-tweaks
 gdebi
 lame
-chromium-browser
 soundconverter
 git
 mc
@@ -25,10 +24,7 @@ synaptic
 neovim
 vim
 curl
-python-pip
 python3-pip
 exuberant-ctags
-ack-grep
 gimp
-
-
+tlp

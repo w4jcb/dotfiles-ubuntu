@@ -57,20 +57,23 @@ for file in ${files3}; do
 done
 
 # Install packages I can't live without.
-xargs -a packages.txt sudo apt-get install
-sudo pip install -r requirements.txt
+xargs -a packages.txt sudo apt install
 
+# Install SNAP packages I can't live without.
+xargs -a snaps.txt sudo snap install
+
+# Install pip3 style packages I can't live without.
+sudo pip3 install -r requirements.txt
 
 # Install all local .deb packages, if available:
 
 if [ -d "/home/$USER/Downloads/Packages" ]; then
     echo "Installing local .deb packages..."
-    pushd /home/$USER/Downloads/Packages
+    cd /home/$USER/Downloads/Packages
     for FILE in ./*
    do
        sudo gdebi -n "$FILE"
    done
-    popd
 else
     echo $'\n'$"WARNING! There's no ~/Downloads/Packages directory."
     echo "Local .deb packages can't be automatically installed."
