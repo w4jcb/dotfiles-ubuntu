@@ -1,5 +1,6 @@
 curl
 exuberant-ctags
+fzf
 gdebi
 gedit
 gedit-plugin-text-size
