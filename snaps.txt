@@ -1,4 +1,4 @@
-tusk
 chromium
-zoom-client
 mumble
+tusk
+zoom-client
