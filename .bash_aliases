@@ -1,3 +1,11 @@
+# enviromental stuff
+# export PATH=$PATH:$HOME/Local-Repo/
+
+# Default programs
+export EDITOR=/usr/bin/nvim
+
+
+
 # functions
 mcd() {
 	mkdir -p $1
@@ -12,6 +20,9 @@ today() {
 showOS(){
 hostnamectl
 }
+
+# Just for fun
+alias hi='echo "Hello World"'
 
 # Easier navigation
 alias ..="cd .."
