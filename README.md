@@ -6,3 +6,8 @@ Installation of dotfiles, symbolic links and all the programs I use.
 
 curl https://raw.githubusercontent.com/w4jcb/dotfiles/master/install.sh | bash
 
+
+Also with Ubuntu 20.04 you will need..
+curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
+sudo apt-get install -y nodejs
+
