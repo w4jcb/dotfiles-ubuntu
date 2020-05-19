@@ -18,6 +18,7 @@ neovim
 net-tools
 openssh-server
 python3-pip
+python3-serial
 ranger
 simplescreenrecorder
 soundconverter
