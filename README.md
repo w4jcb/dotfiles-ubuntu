@@ -6,10 +6,7 @@ Installation of dotfiles, symbolic links and all the programs I use.
 
 curl https://raw.githubusercontent.com/w4jcb/dotfiles/master/install.sh | bash
 
-Requirements for dotfiles to run
-git
-gdebi
-pip3
+Requirements for dotfiles to run => git, gdebi pip3
 
 
 Also with Ubuntu 20.04 you will need..
