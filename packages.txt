@@ -1,3 +1,4 @@
+cifs-utils
 curl
 exuberant-ctags
 fzf
