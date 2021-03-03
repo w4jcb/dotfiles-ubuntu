@@ -2,3 +2,4 @@ chromium
 mumble
 tusk
 zoom-client
+rpi-imager
