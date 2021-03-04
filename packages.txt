@@ -20,6 +20,8 @@ openssh-server
 python3-pip
 python3-serial
 ranger
+rtl-sdr
+rtl-433
 simplescreenrecorder
 soundconverter
 spell
