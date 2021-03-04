@@ -3,3 +3,4 @@ mumble
 tusk
 zoom-client
 rpi-imager
+audacity
